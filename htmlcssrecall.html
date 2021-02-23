@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web Dev Scripting</title>
+        <style>
+            :root {
+                --c1main: rgb(34, 32, 32);
+                --c2main: gray; 
+                
+            }
+            [type='text'] {
+                padding: 5px 6px 5px 6px;
+            }
+            body {
+                
+               color: black;
+                background-color: white;
+               
+                            }
+                        
+            h1 {
+                z-index: 2;
+                background: var(--c1main) !important;
+                text-align: center;
+                padding: 5px;
+                position: fixed;
+                top: -20px;
+                left: 0px;
+                right: 0px;
+                
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+                /* border: 0.5em; border-style: solid; */
+                border-color: rgb(28, 80, 148);
+                background-color: burlywood;
+                color: #e2df3c;
+            }
+            nav {
+                z-index: 1;
+                background: var(--c2main) !important;
+                padding: 5px ;
+                background-color: chocolate;
+                position: absolute;
+                top: 38px;
+                right: 0px;
+                left: 0px;
+            }
+            a {
+                color: rgb(155, 235, 181);
+                padding: 0px 20px;
+            }
+            a:hover {
+                color: #00ffff;
+            }
+
+            #breakemdown {
+                margin-top: 80px;
+                padding: 5px 6px 5px 6px;
+                border: 5px;
+                border-color: aqua;
+                border-style: solid;
+                border-radius: 20px;
+                width: fit-content;
+                background-color: rgb(223, 184, 141);
+            }
+            #bgcolor {
+                padding-left: 20px; 
+                padding-bottom: 4px;
+                padding-top: 4px;
+                background-color: wheat;
+                border: 5px;
+                border-color: transparent
+                border-style: solid;
+                border-radius: 20px;
+            
+            }
+            #paddington {
+                padding: 1px 8px 12px 99px;
+                border: 5px;
+                border-color:rgb(223, 184, 141);
+                border-style: solid;
+                /* border-radius: 20px; */
+                
+            }
+            #marginbu {
+                margin: 30px 99px 2px -8px;
+                border: 1px;
+                border-color:rgb(223, 184, 141);
+                border-style: solid;
+            }
+            [type='text'] {
+                color: #e01818;
+                width: 150px;
+                height: 7px;
+                
+    
+            }
+            [type='password'] {
+                color: hsl(310, 100%, 50%);
+                               
+            }
+        </style>
+    </head>
+    <body>
+       
+       <h1> Html and CSS recall </h1> 
+<nav>
+    <a href="" target="blank"> Home </a>
+</nav>
+
+    <h2 id="breakemdown">Border</h2>
+
+    <h3 id="bgcolor">BackgroundColor</h3>
+
+    
+    <h4 id="paddington">Padding (distnce between element's content and its border)</h4>
+
+    <h4 id="marginbu">Margin (distance between the border of an element and the surrounding elements)</h4>
+    
+<form action="submit"> 
+        <h3>Qualities of a cheetah</h3>
+        <ol>
+            <li>Jump</li>
+            <li>Leap</li>
+            <li>Sprint</li>
+
+        </ol>
+        <label for="usah">Username</label>
+        <input type="text"  placeholder="Enter your username" id="usah" required>
+        <br>
+        <br>
+        <label for="passwa">Password</label>
+        <input type="password" placeholder="Enter your password" id="passwa" required> 
+       <br>
+       <br>
+        <button type="submit"> Submit </button>
+    </form>
+
+    </body>
+   
+</html>
