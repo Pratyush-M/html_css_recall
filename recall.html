@@ -6,6 +6,7 @@
             :root {
                 --c1main: rgb(34, 32, 32);
                 --c2main: gray; 
+                --boldozer: 50px;
                 
             }
             [type='text'] {
@@ -101,6 +102,9 @@
             li {
                 margin-left: -25px;
             }
+            #variabul {
+                padding:  var(--boldozer);
+            }
         </style>
     </head>
     <body>
@@ -147,13 +151,23 @@
     </form>
 <h3>The <u>!important</u> keyword is the most powerful method to override CSS.</h3>
 <u>
-    <h4>Hexadecimals or hex codes:</h4>
+    <h4>Hexadecimal or hex code:</h4>
 </u>
 #<em style="color: #ff0000;">00</em><em style="color: #00ff00;">00</em><em style="color: #0000ff;">00</em>
 <br>
 0-9 and A-F are the 16 symbols that can be used in hex code.
 More than 16M unique colors can be created using the combination of RGB in hex code.
+ 
+<h3><u>RGB values:</u></h3>
+rgb(<em style="color: #ff0000;">0</em>,<em style="color: #00ff00;">0</em>,<em style="color: #0000ff;">0</em>)
+<br>
+Using rgb to select color we can get exactly the same number of distinct color combinations. 
+Since we can select values from 0-255 for each red, green and blue where 
+zero is the lightest and 255 is brightest we get a total of over 16M distinct colors.
 
+<h3 id="variabul"><u>Variables:</u></h3>
+Using variables we can easily change properties of many different elements simultaneously.
+Here the value of the variable is set to 50px and has been applied to the padding property of the current h3 element.
 
     </body>
     
