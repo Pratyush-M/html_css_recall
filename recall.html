@@ -40,7 +40,7 @@
                 padding: 5px ;
                 background-color: chocolate;
                 position: absolute;
-                top: 38px;
+                top: 37px;
                 right: 0px;
                 left: 0px;
             }
@@ -68,9 +68,9 @@
                 padding-top: 4px;
                 background-color: wheat;
                 border: 5px;
-                border-color: transparent
+                border-color: transparent;
                 border-style: solid;
-                border-radius: 20px;
+                border-radius: 20px
             
             }
             #paddington {
@@ -98,6 +98,9 @@
                 color: hsl(310, 100%, 50%);
                                
             }
+            li {
+                margin-left: -25px;
+            }
         </style>
     </head>
     <body>
@@ -117,28 +120,30 @@
     <h4 id="marginbu">Margin (distance between the border of an element and the surrounding elements)</h4>
     
 <form action="submit"> 
-        <h3>Qualities of a cheetah</h3>
+        <h3> <u>Login instructions:</u></h3>
         <ol>
-            <li>Jump</li>
-            <li>Leap</li>
-            <li>Sprint</li>
-
+            <li style="margin-top: -5px; ">Username is not case sensitive.</li>
+            <li>Password is case sensitive.</li>
+            <li>Select correct login channel before you login.</li>
         </ol>
+
+        <h3>Enter your login details:</h3>
         <label for="usah">Username</label>
         <input type="text"  placeholder="Enter your username" id="usah" required>
+        <!-- id in input tag is used to help label tag hook on to 
+             the correct input field using the "for" atribute -->
         <br>
         <br>
         <label for="passwa">Password</label>
         <input type="password" placeholder="Enter your password" id="passwa" required> 
        <br>
        <br>
-       
-
-        <br>
-        <input type="radio" name="limbo"> Jikla
-        <input type="radio" name="limbo" checked> tupla
-        <input type="radio" name="limbo"> mapla
-        <button type="submit"> Submit </button>
+       <h3>Select channel:</h3>
+        <input type="radio" name="limbo"> Agent
+        <input type="radio" name="limbo" checked> User
+        <input type="radio" name="limbo"> Employee
+        <br><br>
+        <button type="submit"> Login </button>
     </form>
 
     </body>
