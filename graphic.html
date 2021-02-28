@@ -18,6 +18,8 @@
                 animation-name: ltrb;
 animation-duration: 2s;
 animation-iteration-count: infinite;
+
+z-index: 1;
             }
 #circul {
     position: absolute;
@@ -33,6 +35,8 @@ height: 30px;
 animation-name: ltr;
 animation-duration: 2s;
 animation-iteration-count: infinite;
+
+z-index: 2;
 }
 
 #circul::before {
@@ -58,13 +62,24 @@ animation-iteration-count: infinite;
     width: 30px;
 }
 @keyframes ltrb {
-    50% {
-        top: -50px;
+    50%  {
+        top: -18px;
+        right: -46px;
+        
     }
+    80%, 90% {
+        top: -500px;
+       
+    }
+
+  
 }
 @keyframes ltr {
     50% {
         transform: rotate(35deg);
+    }
+    70% {
+        transform: rotate(-20deg);
     }
 }
 
