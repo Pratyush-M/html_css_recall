@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is a custom graphic</title>
+        <style>
+
+            #ball {
+                position: absolute;
+                margin: auto;
+                top: -85px;
+                left: 80px;
+                bottom: 0px;
+                right: 0px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: red;
+                animation-name: ltrb;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+            }
+#circul {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    background-color: aqua;
+width: 50px;
+height: 30px;
+
+animation-name: ltr;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+#circul::before {
+    content: "";
+    position: absolute;
+    background-color: cyan;
+    top: -20px;
+    left: -17px;
+
+    height: 50px;
+    width: 30px;
+    
+    
+    
+}
+#circul::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    background-color: cyan;
+    height: 50px;
+    width: 30px;
+}
+@keyframes ltrb {
+    50% {
+        top: -50px;
+    }
+}
+@keyframes ltr {
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div id="circul"></div>
+        <div id="ball"></div>
+    </body>
+</html>
